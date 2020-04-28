@@ -16,19 +16,19 @@
 
           <ul class="show-desktop hide-mobile" id="nav">
             <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.svg" alt="exit menu"></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Photography</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="photography.html">Photography</a></li>
           </ul>
         </nav>
       </header>
 
       <section>
-        <img src="images/server.svg" alt="server graphic" class="server">
+        <img src="images/home-background.jpg" alt="home-background" class="home-background">
 
-        <h1>Mona Lee</h1>
-        <p class="subhead">https://monaxlee.weebly.com/</p>
+        <h1>MONA LEE</h1>
+        <p class="subhead">Roboticist. Minimalist. Photojournalist.</p>
         
         <img src="images/scroll.svg" alt="scroll down" class="scroll hide-mobile show-desktop">
       </section>
@@ -75,20 +75,28 @@
     </div>
 
     <div class="container">
-      <h2>Get in touch.</h2>
+      <h2>Get In Touch.</h2>
       <p>If you want to contact me, feel free to reach out on LinkedIn or by sending me an email at monalee543@gmail.com.</p>
       <a href="#" class="cta">Contact me</a>
     </div>
 
-    <footer>
-      <div class="footer-container">
-        <div class="container">
-          <a href="#">
-            <img src="images/logo-white.svg" class="logo" alt="logo">
-          </a>
-        </div>
-      </div>
-    </footer>
+    <script>
+
+      var menu = document.getElementById('menu');
+      var nav = document.getElementById('nav');
+      var exit = document.getElementById('exit');
+
+      menu.addEventListener('click', function(e) {
+        nav.classList.toggle('hide-mobile');
+        e.preventDefault();
+      });
+
+      exit.addEventListener('click', function(e) {
+        nav.classList.add('hide-mobile');
+        e.preventDefault();
+      });
+
+    </script>
 
   </body>
 </html>
