@@ -22,7 +22,7 @@ ul {
 }
 
 .logo {
-    width: 130px;
+    width: 50px;
 }
 
 .hide-mobile {
@@ -39,17 +39,30 @@ header {
     margin-top: 45%;
 }
 
+.home-image {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .home-background {
     width: 100%;
 }
 
-h1, .subhead {
+.h1, .subhead {
     position: relative;
     z-index: 3;
 }
 
 .subhead {
-    font-size: 1.1em;
+    font-size: 0.6em;
 }
 
 .blue-container {
@@ -150,7 +163,7 @@ nav ul li a:hover {
     margin-top: -1.3em;
     text-align: right;
     padding: 0 1.4em;
-    background-color: black;
+    background-color: white;
 }
 
 .exit-btn img {
@@ -255,20 +268,6 @@ nav ul li a:hover {
 
     nav ul li a:hover {
         background-color: inherit;
-    }
-
-    .scroll {
-        width: 30px;
-        animation: move 1s infinite alternate;
-    }
-
-    @keyframes move {
-        from {
-            transform: translateY(0px);
-        }
-        to {
-            transform: translateY(20px);
-        }
     }
 }
 

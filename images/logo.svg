@@ -1,7 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="148.173" height="39.177" viewBox="0 0 148.173 39.177">
-  <g id="logo" transform="translate(-140 -34.417)">
-    <text id="_26andfour" data-name="26andfour" transform="translate(140 67.595)" font-size="23" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">26andfour</tspan></text>
-    <rect id="Rectangle_1" data-name="Rectangle 1" width="6.158" height="20.152" rx="3.079" transform="translate(282.632 34.417) rotate(45)" fill="#00c2ff"/>
-    <rect id="Rectangle_2" data-name="Rectangle 2" width="6.158" height="20.152" rx="3.079" transform="translate(283.819 44.997) rotate(45)" fill="#00cc80"/>
-  </g>
+<svg width="69" height="72" viewBox="0 0 69 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="30" cy="32" r="30" fill="black"/>
+<path d="M38 2C38 13.2755 38.0844 24.4844 38.6269 35.7101C38.6786 36.7792 38.5336 37.8755 38.5828 38.9309C38.5977 39.2501 45.2684 39.0256 45.6645 39.0256C49.5033 39.0256 53.3512 38.8631 57.1788 39.391C58.7729 39.6109 60.3978 40 62 40" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.4386 62.848C10.4386 59.029 9.99912 19.992 10 19.992C10.546 19.992 12.9915 24.554 13.2895 25.0304C14.806 27.4553 16.1735 30.0309 17.3587 32.578C17.9769 33.9067 19.7958 40.7264 20.4289 36.2422C21.3864 29.4596 24.0782 23.2299 26.6667 16.7658C26.6909 16.7054 27.4308 14.5842 27.7632 15.0731C28.1632 15.6617 27.974 16.6125 28.0068 17.2438C28.1432 19.8625 28.5807 22.4798 28.8596 25.0901C30.2711 38.2988 32.7521 51.441 34.2203 64.6404C34.4071 66.3197 35 71.3451 35 69.6588" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
