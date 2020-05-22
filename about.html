@@ -1,8 +1,63 @@
-<html>
+<html lang="en">
     <head>
-        <title>About</title>
+      <title>About</title>
+      <link rel="stylesheet" href="css/about.css">
     </head>
     <body>
-        <p>Mona Lee - About</p>
+      <div class="container">
+        <header>
+          <img src="images/Logo.svg" alt="Mona Lee logo" class="logo">
+  
+          <nav>
+            <a href="#" class="hide-desktop">
+              <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
+            </a>
+  
+            <ul class="show-desktop hide-mobile" id="nav">
+              <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.svg" alt="exit menu"></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="work.html">Work</a></li>
+              <li><a href="photography.html">Photography</a></li>
+            </ul>
+          </nav>
+        </header>
+    
+        <div class="home-image">
+          <img src="images/home-background.jpg" alt="home-background" style="width:100%;">
+          <div class="centered">
+            <h1>MONA LEE</h1>
+            <p class="subhead">Roboticist. Minimalist. Photojournalist.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-container">
+        <div class="container">
+          <ul>
+            <img src="images/headshot.jpeg" alt="Mona Lee headshot">
+            <h1>A Little About Myself.</h1>
+            <p>Hi! My name's Mona and I'm currently a junior at the University of Pennsylvania studying Mechanical Engineering with a minor in Computer Science and intend on getting my Masters in Robotics from Penn.</p>
+            <p>I'm interested in creating and developing technologies to solve some of the world's greatest issues through a sustainable lens.</p>
+            <a href="#" class="cta">LEARN MORE</a>
+          </ul>
+        </div>
+      </div>
+
+      <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+  
+        menu.addEventListener('click', function(e) {
+          nav.classList.toggle('hide-mobile');
+          e.preventDefault();
+        });
+  
+        exit.addEventListener('click', function(e) {
+          nav.classList.add('hide-mobile');
+          e.preventDefault();
+        });
+      </script>
     </body>
 </html>
