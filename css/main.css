@@ -4,6 +4,11 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    background-color: lavender;
+}
+
+h1 {
+    font-size: 1.5em;
 }
 
 p, blockquote { 
@@ -23,7 +28,8 @@ ul {
 }
 
 .logo {
-    width: 50px;
+    width: 75px;
+    margin: 0.8em 1.2em;
 }
 
 .hide-mobile {
@@ -37,14 +43,14 @@ header {
 
 .menu {
     width: 25px;
-    margin-top: 45%;
+    margin-top: 70%;
+    margin-right: 0.65em;
 }
 
-.home-image {
+.home-centerpiece img {
     position: relative;
     text-align: center;
-    color: white;
-    width: 100%;
+    width: 40%;
 }
 
 .centered {
@@ -81,14 +87,15 @@ nav ul li a:hover {
 
 .exit-btn {
     margin-bottom: 1em;
-    margin-top: -1.3em;
+    margin-top: -1em;
+    margin-right: 0.6em;
     text-align: right;
     padding: 0 1.4em;
     background-color: white;
 }
 
 .exit-btn img {
-    width: 15px;
+    width: 20px;
     cursor: pointer;
 }
 
