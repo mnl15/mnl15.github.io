@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://p.typekit.net/p.css?s=1&k=uhs7uyp&ht=tk&f=26062&a=46364996&app=typekit&e=css");
 
 /* mobile first CSS */ 
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'acumin-pro',Helvetica, Arial, sans-serif;
     background-color: lavender;
 }
 
@@ -50,14 +50,26 @@ header {
 .home-centerpiece img {
     position: relative;
     text-align: center;
-    width: 40%;
+    width: 30%;
+    margin-top: 4em;
 }
 
-.centered {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.home-centerpiece h1 {
+    margin-top: 0.5em;
+}
+
+.home-centerpiece {
+    margin-bottom: 17%;
+}
+
+.about-container {
+    background-color: white;
+    padding: 0.2em 0.2em;
+}
+
+.about-container img {
+    width: 80%;
+    margin: 10% 10% 10% 10%;
 }
 
 nav ul {
@@ -106,14 +118,31 @@ nav ul li a:hover {
         margin: 0;
     }
 
+    .home-centerpiece img {
+        width: 200px;
+    }
+
+    .home-centerpiece {
+        font-size: 1em;
+    }
+
     .subhead {
         font-size: 1.4em;
         margin-bottom: 12%;
     }
 
+    ul {
+        position: inherit;
+        width: auto;
+        background: none;
+        height: auto;
+        display: flex;
+        padding-top: 0;
+    }
+
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 950px) {
 
     .container {
         width: 80%;
@@ -122,13 +151,14 @@ nav ul li a:hover {
 
     .show-desktop {
         display: block;
-        margin: 0 auto 13% auto;
+        margin: 4% auto 13% auto;
     }
 
     .hide-desktop {
         display: none;
     }
 
+    
     nav ul {
         position: inherit;
         width: auto;
