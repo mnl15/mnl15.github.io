@@ -1,19 +1,17 @@
-@import url("https://p.typekit.net/p.css?s=1&k=uhs7uyp&ht=tk&f=26062&a=46364996&app=typekit&e=css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 /* mobile first CSS */ 
 body {
     margin: 0;
-    font-family: 'acumin-pro',Helvetica, Arial, sans-serif;
-    background-color: lavender;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 
 h1 {
     font-size: 1.5em;
-}
-
-p, blockquote { 
-    font-size: .9em;
-    line-height: 1.6em;
 }
 
 ul {
@@ -28,8 +26,8 @@ ul {
 }
 
 .logo {
-    width: 75px;
-    margin: 0.8em 1.2em;
+    width: 30px;
+    margin: 0.8em 0.8em;
 }
 
 .hide-mobile {
@@ -49,27 +47,8 @@ header {
 
 .home-centerpiece img {
     position: relative;
-    text-align: center;
-    width: 30%;
-    margin-top: 4em;
-}
-
-.home-centerpiece h1 {
-    margin-top: 0.5em;
-}
-
-.home-centerpiece {
-    margin-bottom: 17%;
-}
-
-.about-container {
-    background-color: white;
-    padding: 0.2em 0.2em;
-}
-
-.about-container img {
-    width: 80%;
-    margin: 10% 10% 10% 10%;
+    width: 350px;
+    margin-top: 3em;
 }
 
 nav ul {
@@ -94,7 +73,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: rgb(65,73,78);
+    color: rgb(41, 167, 122);
 }
 
 .exit-btn {
@@ -113,40 +92,24 @@ nav ul li a:hover {
 
 @media only screen and (min-width: 650px) {
 
-    h1 {
-        font-size: 3em;
-        margin: 0;
-    }
 
     .home-centerpiece img {
-        width: 200px;
-    }
-
-    .home-centerpiece {
-        font-size: 1em;
-    }
-
-    .subhead {
-        font-size: 1.4em;
-        margin-bottom: 12%;
-    }
-
-    ul {
-        position: inherit;
-        width: auto;
-        background: none;
-        height: auto;
-        display: flex;
-        padding-top: 0;
+        width: 25em;
+        margin: 0 auto;
     }
 
 }
 
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 850px) {
 
     .container {
         width: 80%;
-        margin: 0 auto;
+        margin: 0 3em;
+    }
+
+    .logo {
+        width: 40px;
+        margin-top: 1em;
     }
 
     .show-desktop {
@@ -158,7 +121,12 @@ nav ul li a:hover {
         display: none;
     }
 
-    
+    .home-centerpiece img {
+        width: 100%;
+        margin-left: 2em;
+        margin-right: auto;
+    }
+
     nav ul {
         position: inherit;
         width: auto;
@@ -187,6 +155,6 @@ nav ul li a:hover {
 @media only screen and (min-width: 1600px) {
 
     .container {
-        width: 70%;
+        width: 100%;
     }
 }
