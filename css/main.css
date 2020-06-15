@@ -47,7 +47,7 @@ header {
 
 .home-centerpiece img {
     position: relative;
-    width: 350px;
+    width: 70%;
     margin-top: 3em;
 }
 
@@ -91,7 +91,6 @@ nav ul li a:hover {
 }
 
 
-/*
 @media screen and (min-width: 650px) {
 
 
@@ -160,4 +159,3 @@ nav ul li a:hover {
         width: 100%;
     }
 }
-*/
