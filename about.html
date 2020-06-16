@@ -1,63 +1,74 @@
-<html lang="en">
-    <head>
-      <title>About</title>
-      <link rel="stylesheet" href="css/about.css">
-    </head>
-    <body>
-      <div class="container">
-        <header>
-          <img src="images/Logo.svg" alt="Mona Lee logo" class="logo">
-  
-          <nav>
-            <a href="#" class="hide-desktop">
-              <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
-            </a>
-  
-            <ul class="show-desktop hide-mobile" id="nav">
-              <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.svg" alt="exit menu"></li>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="work.html">Work</a></li>
-              <li><a href="photography.html">Photography</a></li>
-            </ul>
-          </nav>
-        </header>
-    
-        <div class="home-image">
-          <img src="images/home-background.jpg" alt="home-background" style="width:100%;">
-          <div class="centered">
-            <h1>MONA LEE</h1>
-            <p class="subhead">Roboticist. Minimalist. Photojournalist.</p>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Mona Lee</title>
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#fff">
+    <meta name="application-name" content="favicons-webpack-plugin">
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=0.8, user-scalable=no" />
+
+    <script src="/assets/global.bundle.js"></script>
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body id="index" class="ep-block-container">
+  <div id="header">
+      <a href="/">
+          <div id="logo">
+              <img src="images/Logo.png">
           </div>
-        </div>
-      </div>
+      </a>
 
-      <div class="about-container">
-        <div class="container">
-          <ul>
-            <img src="images/headshot.jpeg" alt="Mona Lee headshot">
-            <h1>A Little About Myself.</h1>
-            <p>Hi! My name's Mona and I'm currently a junior at the University of Pennsylvania studying Mechanical Engineering with a minor in Computer Science and intend on getting my Masters in Robotics from Penn.</p>
-            <p>I'm interested in creating and developing technologies to solve some of the world's greatest issues through a sustainable lens.</p>
-            <a href="#" class="cta">LEARN MORE</a>
-          </ul>
-        </div>
+      <div class="ep-menu">
+        <span class="ep-button">
+            <a class="ep-text" href="index.html">home</a>
+        </span>
+        <span class="ep-button">
+            <a class="ep-text" href="work.html">work</a>
+        </span>
+        <span class="ep-button">
+            <a class="ep-text" href="photography.html">photography</a>
+        </span>
       </div>
+  </div>
 
-      <script>
-        var menu = document.getElementById('menu');
-        var nav = document.getElementById('nav');
-        var exit = document.getElementById('exit');
+  <div class="ep-block left row-1 rellax" data-rellax-speed="-5">
+    <div class="ep-text" style="font-size: 110%; line-height: 30px; margin-right: 3em; padding-top: 0; padding-bottom: 3em;">
+      <span class="ep-title">ABOUT</span>
+      <br>
+      <br>
+      Hey there! My name's Mona and I'm currently a rising senior at the University of Pennsylvania working towards a BSE in Mechanical Engineering
+      with a minor in Computer Science and MSE in Robotics. I'm excited about software for electro-mechanical systems, especially robotic motion and I 
+      have a diverse background spanning the breadth of both mechanical engineering and software development. 
+      <br>
+      <br>
+      I started dabbling in tech in late middle/early high school and took my first Python programming course in eighth grade, later becoming a research intern at the 
+      National Institute of Standards and Technology performing data analysis and data visualization in Python. I came to college and declared Mechanical Engineering 
+      (MEAM) after taking the introductory physics and manufacturing classes, but wanted to continue to develop my software skills and started the CS Intro sequence. 
+      The following summer, I took a design internship and studied for the Java Programmer certification and found myself drawn to writing programs for software rather than to using it. 
+      When I returned to Penn, I decided that I loved the MEAM community and project-based courses enough to stay in the major and would do a CS minor with extra CS 
+      classes on the side. This past summer, I decided to try my hands at developing software for physical systems and programmed a robot to maneuver in a life-like fashion in coordination with music
+      for a Design professor at Penn. 
+      From this project, I learned C++, interacted with other students in computer science and electrical engineering, and discovered my passion for robotics.  
+      <br>
+      <br>
+      I'm also extremely passionate about social justice issues and make sure to live my life mindfully, contributing towards creating a more sustainable society. 
+      I've served as the News Photo Editor and a senior photographer for the Daily Pennsylvanian, Penn's student-run newspaper, believing in the importance of independent 
+      journalism and telling people's stories. I've also been the Public Relations chair for Penn's pre-professional environmental fraternity, Epsilon Eta, bringing 
+      together many of the Sustainability groups at Penn and creating a more open sustainability community for people at Penn to contribute. I'm interested in a wide array 
+      of things and at Penn have also been a part of Penn Fashion Collective (marketing for the fashion show on fashion and technology), PennApps (outreach for Penn's 
+      student hackathon), Advancing Women in Engineering, and Theta Tau (Penn's professional engineering fraternity). 
+    </div>
+  </div>
+
+  <div class="ep-block right row-1 rellax" data-rellax-speed="3">
+    <div class="ep-graphic fill" style="padding-bottom: 30px;">
+        <img src="images/headshot.jpeg" id="on-chair" class="ep-photo">
+    </div>
+  </div>
   
-        menu.addEventListener('click', function(e) {
-          nav.classList.toggle('hide-mobile');
-          e.preventDefault();
-        });
-  
-        exit.addEventListener('click', function(e) {
-          nav.classList.add('hide-mobile');
-          e.preventDefault();
-        });
-      </script>
-    </body>
-</html>
+</div>
+</body>
