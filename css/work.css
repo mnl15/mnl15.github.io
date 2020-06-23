@@ -604,6 +604,17 @@ body {
   color: #4A4A4A;
   font-weight: lighter; 
 }
+
+.ep-title {
+  font-weight: normal;
+}
+
+.section-header {
+  text-align: center; 
+  font-size: 1.7em; 
+  margin: 15px;
+}
+
 .ep-button {
   position: relative;
 }
@@ -827,7 +838,8 @@ body {
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 20px;
+  padding: 20px 20px;
+
 }
 
 .column {
@@ -837,9 +849,15 @@ body {
 }
 
 .column img {
-  margin-top: 8px;
+  margin-top: 20px;
   vertical-align: middle;
   width: 100%;
+}
+
+.caption {
+  text-align: center;
+  margin-top: 9px;
+  font-size: 1.2em;
 }
 
 @media screen and (max-width: 800px) {

@@ -604,6 +604,9 @@ body {
   color: #4A4A4A;
   font-weight: lighter;
 }
+.ep-title {
+  font-weight: normal;
+}
 .ep-button {
   position: relative;
 }
