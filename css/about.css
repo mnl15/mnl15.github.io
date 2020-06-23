@@ -602,6 +602,7 @@ body {
 .ep-text {
   font-family: "HarmoniaSans W01 Bold", sans-serif;
   color: #4A4A4A;
+  font-weight: lighter;
 }
 .ep-button {
   position: relative;
