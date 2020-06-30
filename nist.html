@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Mona Lee</title>
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#fff">
+    <meta name="application-name" content="favicons-webpack-plugin">
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=0.8, user-scalable=no" />
+
+    <script src="/assets/global.bundle.js"></script>
+    <link rel="stylesheet" href="css/joplin.css">
+
+</head>
+
+<body id="index" class="ep-block-container">
+  <div id="header">
+      <a href="/">
+          <div id="logo">
+              <img src="images/Logo.png">
+          </div>
+      </a>
+
+      <div class="ep-menu">
+        <span class="ep-button">
+            <a class="ep-text" href="work.html">work</a>
+        </span>
+        <span class="ep-button">
+            <a class="ep-text" href="photography.html">photography</a>
+        </span>
+        <span class="ep-button">
+            <a class="ep-text" href="about.html">about</a>
+        </span>
+      </div>
+  </div>
+
+  <div class="container">
+    <p class="h1 ep-text">
+      SCIPLOT INTERACTIVE PLOTTING
+    </p>
+    <p class="h2 ep-text">
+      PROJECT UNDER CHARLES CAMP JR. AT THE NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY - SUMMER 2016
+    </p>
+    <p class="h3 ep-text">
+      Python, Matlab
+    </p>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="ep-block">
+        <p class="h4 ep-text">
+          As part of the Summer High School Internship Program at the National Institute of Standards and Technology 
+          in Gaithersburg, Maryland, I worked under Dr. Camp in the Material Measurement Laboratory to develop 
+          software for his project SciPlot, a user-interface/matplotlib wrapper built with PyQt5 that allows 
+          interactive plotting through an embedded matplotlib canvas. It creates fast and easy publication-ready 
+          plots and images and I worked on the plotting for data received from Raman spectroscopy.  
+        </p>
+        <p class="h4 ep-text">
+          Raman spectroscopy is an imaging technique used to determine vibrational modes of molecules and provides 
+          a structural fingerprint for the chemical composition of a sample. First, I analyzed the output data (with 
+          values ranging from 0-1,000,000) using a recursive program in Python to determine common peaks and accounting 
+          for small variations in value. Then, I compared these values to known values from academic research that 
+          correspond to different chemical compounds such as carbohydrates or collagen. 
+        </p>
+        <br>
+      </div>
+      <div class="ep-block">
+        <img src="images/work/nist-1.png" alt="Data Visualization">
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <p class="h4 ep-text">
+      Finally, I developed the plotting function within SciPlot in order to identify and visualize the determined 
+      chemical components based on the data received from Raman spectroscopy.  
+    </p>
+    <a class="ep-text" style="text-decoration: underline;" href="https://github.com/CCampJr/SciPlot-PyQt">Github Code</a>
+    <br>
+    <br>
+    <div>
+      <img src="images/work/nist-2.png" alt="Received Data Visualized" class="margin-auto">
+    </div>
+  </div>
+</div>
+</body>
