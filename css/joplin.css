@@ -790,6 +790,16 @@ body {
   width: 100%;
 }
 
+.column-21 {
+  flex: 50%; 
+  max-width: 50%;
+  padding: 0 20px; 
+}
+
+.column-21 img {
+  width: 100%;
+}
+
 .ep-block {
   flex: 40%;
   margin-right: 20px;
@@ -832,6 +842,12 @@ object {
   .column {
     flex: 50%;
     max-width: 50%;
+    padding: 0 10px;
+  }
+
+  .column-21 {
+    flex: 100%;
+    max-width: 100%;
     padding: 0 10px;
   }
 
