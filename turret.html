@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Mona Lee</title>
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#fff">
+    <meta name="application-name" content="favicons-webpack-plugin">
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=0.8, user-scalable=no" />
+
+    <script src="/assets/global.bundle.js"></script>
+    <link rel="stylesheet" href="css/joplin.css">
+
+</head>
+
+<body id="index" class="ep-block-container">
+  <div id="header">
+      <a href="/">
+          <div id="logo">
+              <img src="images/Logo.png">
+          </div>
+      </a>
+
+      <div class="ep-menu">
+        <span class="ep-button">
+            <a class="ep-text" href="work.html">work</a>
+        </span>
+        <span class="ep-button">
+            <a class="ep-text" href="photography.html">photography</a>
+        </span>
+        <span class="ep-button">
+            <a class="ep-text" href="about.html">about</a>
+        </span>
+      </div>
+  </div>
+
+  <div class="container">
+    <p class="h1 ep-text">
+      TURRET
+    </p>
+    <p class="h2 ep-text">
+      PROJECT COMPLETED FOR MEAM 348 LAB - SPRING 2020
+    </p>
+    <p class="h3 ep-text">
+      Solidworks
+    </p>
+    <p class="ep-header ep-text">
+      OVERVIEW
+    </p>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="ep-block">
+        <p class="h4 ep-text">
+          This project was for MEAM 348, the Mechanical Engineering Junior Design Lab and I worked on it with a group of 
+          eight other students, divided into subteams where I mainly worked with Maddie Magee and Roselyn Matlou on the 
+          base of the turret. The goal of the project was to fabricate a complex machine that will have catastrophic failures 
+          at 2.5 times the nominal load and our team chose to manufacture a turret from the video game Portal. In Portal, a 
+          turret will open its wings to show that it is activated and therefore, our turret's main purpose was to open and 
+          close its wings, with failure modes for the chassis, wings and base.  
+        </p>
+        <p class="h4 ep-text">
+          My subteam focused on the base of the turret which supported the body by three legs and was designed to undergo 
+          torsional failure when the mass of the body was added. Given the unprecedented situation with COVID-19, we 
+          were not able to fabricate and test our turret, however we used Solidworks and ANSYS to test various failure modes
+          and validate integration of all the parts.  
+        </p>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="ep-block">
+      <img src="images/work/turret-1.png" alt="Instructions Screen">
+    </div>
+  </div>
+
+  <div class="container">
+    <p class="ep-header ep-text">
+      FAILURE ANALYSIS
+    </p>
+    <p class="h4 ep-text">
+      In order to make our failure "catastrophic" and "interesting", as stated in our lab prompt, we attempted to make the legs 
+      fail in torsion rather than bending. This is a unique challenge as it is not possible currently to mathematically derive 
+      this torsional failure and instead, we relied on modeling softwares (Solidworks and ANSYS) which could be validated through
+      fabrication and testing.  
+    </p>
+    <p class="h4 ep-text">
+      The Finite Element Analysis (FEA) of our designs were modeled with acrylic and the nominal load for the legs was calculated 
+      from the mass of the chassis, wings, and motor to be 3.095kg or a resultant force of 53.7N. The unstable model successfully 
+      reached yielding stress at 45MPa at that force and the stable model only reached 15.6 MPa at the same x2.5 nominal load.   
+    </p>
+    <div class="row">
+      <div class="column-21">
+        <img src="images/work/turret-2.png" alt="Unstable Design Tested">
+        <div class="ep-text">
+          <div class="caption">
+              // Unstable Design at x2.5 Nominal Load 
+          </div>
+        </div>
+      </div>
+      <div class="column-21"> 
+        <img src="images/work/turret-3.png" alt="Stable Design Tested">
+        <div class="ep-text">
+          <div class="caption">
+              // Stable Design at x2.5 Nominal Load 
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <p class="ep-header ep-text">
+      DESIGN DECISIONS
+    </p>
+    <p class="h4 ep-text">
+      In designing the base for the turret, we wanted to maintain the original turret's three-legged support structure, but after 
+      doing an initial test with just the three legs, decided to add an a lower plate that would attach to the legs for additional support.   
+    </p>
+    <p class="h4 ep-text">
+      Once we received an estimate of mass from the other two subteams, we were able to perform analyses with the updated load on our 
+      design and saw that it would not be able to sustain the applied load. Since the load was focused on the inner circle of the upper 
+      base, the design would cave in on itself and the legs would not be able to support the  localized load as the supports were at a 
+      larger radius from the center. Since the highest concentration of stresses were found at the angled areas of the legs, we decided 
+      to change the design toward a more tabletop design with the legs angled toward the center then extending straight toward the ground.   
+    </p>
+    <p class="h4 ep-text">
+      After obtaining a final mass for the chassis and wings, we updated and ran our analyses on the two designs: the first with legs 
+      angled out from the body and the second with legs angled inward then extending outward. While we had previously thought that the 
+      first design would not be able to support the load because of the shape of the legs, when we increased the thickness of the legs 
+      and analyzed both designs, they resulted in similar stress concentrations. Finally, we decided on the first design with thicker 
+      legs since it was more true to the Portal turret design. 	   
+    </p>
+    <div class="row">
+      <div class="column-21">
+        <img src="images/work/turret-4.png" alt="Design 1 and 2">
+      </div>
+      <div class="column-21"> 
+        <img src="images/work/turret-5.png" alt="Design 3 and 4">
+      </div>
+    </div>
+  </div>
+
+  
+</div>
+</body>

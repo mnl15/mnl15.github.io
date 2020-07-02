@@ -1,72 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
     <title>Mona Lee</title>
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#fff">
+    <meta name="application-name" content="favicons-webpack-plugin">
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=0.8, user-scalable=no" />
+
+    <script src="/assets/global.bundle.js"></script>
+
     <link rel="stylesheet" href="css/photography.css">
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <img src="images/Logo.svg" alt="Mona Lee logo" class="logo">
+</head>
 
-        <nav>
-          <a href="#" class="hide-desktop">
-            <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
+<body id="index" class="ep-block-container">
+  <div id="header">
+      <a href="/">
+          <div id="logo">
+              <img src="images/Logo.png">
+          </div>
+      </a>
+
+      <div class="ep-menu">
+        <span class="ep-button">
+            <a class="ep-text" href="work.html">work</a>
+        </span>
+        <span class="ep-button">
+            <a class="ep-text" href="photography.html">photography</a>
+        </span>
+        <span class="ep-button">
+            <a class="ep-text" href="about.html">about</a>
+        </span>
+      </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <a href="dp.html">
+            <img src="images/photography/dp/dp4.jpg" alt="The Daily Pennsylvanian" class="image">
+            <div class="ep-text">
+                <div class="caption">
+                    THE DAILY PENNSYLVANIAN
+                </div>
+            </div>
+        </a>
+      </div>
+      <div class="column">
+          <a href="street.html">
+              <img src="images/photography/street/street9.jpg" alt="34 Street" class="image">
+              <div class="ep-text">
+                  <div class="caption">
+                      34 STREET MAGAZINE
+                  </div>
+              </div>
           </a>
-
-          <ul class="show-desktop hide-mobile" id="nav">
-            <!--<li id="exit" class="exit-btn hide-desktop"><img src="images/exit.svg" alt="exit menu"></li>-->
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="work.html">Work</a></li>
-            <li><a href="photography.html">Photography</a></li>
-          </ul>
-        </nav>
-      </header>
-
-      <div class="home-image">
-        <img src="images/home-background.jpg" alt="home-background" style="width:100%;">
-        <div class="centered">
-          <h1>MONA LEE</h1>
-          <p class="subhead">Roboticist. Minimalist. Photojournalist.</p>
-        </div>
-
       </div>
     </div>
-
-    <div class="blue-container">
-      <div class="container">
-        <ul>
-          <img src="images/headshot.jpeg" alt="headshot">
-          <h1> A Little About Myself.</h1>
-          <p>VAWT. Hi! My name's Mona and I'm currently a junior at the University of Pennsylvania studying Mechanical Engineering with a minor in Computer Science and intend on getting my Masters in Robotics from Penn. I'm interested in creating and developing technologies to solve some of the world's greatest issues through a sustainable lens.</p>
-        </ul>
+    <div class="row">
+      <div class="column">
+        <a href="travel.html">
+          <img src="images/photography/travel/travel3.jpg" alt="Travel" class="image">
+          <div class="ep-text">
+              <div class="caption">
+                  TRAVEL
+              </div>
+          </div>
+        </a>
       </div>
     </div>
-
-    <div class="container">
-      <h2>Get In Touch.</h2>
-      <p>If you want to contact me, feel free to reach out on LinkedIn or by sending me an email at monalee543@gmail.com.</p>
-      <a href="#" class="cta">Contact me</a>
-    </div>
-
-    <script>
-
-      var menu = document.getElementById('menu');
-      var nav = document.getElementById('nav');
-      var exit = document.getElementById('exit');
-
-      menu.addEventListener('click', function(e) {
-        nav.classList.toggle('hide-mobile');
-        e.preventDefault();
-      });
-
-      exit.addEventListener('click', function(e) {
-        nav.classList.add('hide-mobile');
-        e.preventDefault();
-      });
-
-    </script>
-
-  </body>
-</html>
+  </div>
+  
+</div>
+</body>

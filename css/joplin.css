@@ -759,12 +759,13 @@ body {
 
 .h3 {
   font-weight: normal;
-  margin-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 .ep-header {
   font-size: 170%;
   margin-bottom: 7px;
+  padding-top: 20px;
 }
 
 .h4 {
