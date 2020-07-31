@@ -641,14 +641,9 @@ body {
 }
 
 #footer {
-  width: 100%;
-  margin-top: 50px;
-  margin-bottom: 30px;
-}
-#footer .ep-text {
-  color: #888888;
-  width: 100%;
-  text-align: center;
+  text-align: right;
+  padding: 60px;
+  font-size: larger;
 }
 @media (min-width: 850px) {
   .row-2 {
