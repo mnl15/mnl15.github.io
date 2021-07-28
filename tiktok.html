@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Mona Lee</title>
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#fff">
+    <meta name="application-name" content="favicons-webpack-plugin">
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=0.8, user-scalable=no" />
+
+    <script src="/assets/global.bundle.js"></script>
+    <link rel="stylesheet" href="css/joplin.css">
+
+</head>
+
+<body id="index" class="ep-block-container">
+  <div id="header">
+      <a href="/">
+          <div id="logo">
+              <img src="images/Logo.png">
+          </div>
+      </a>
+
+      <div class="ep-menu">
+        <span class="ep-button">
+            <a class="ep-text" href="work.html">work</a>
+        </span>
+        <span class="ep-button">
+            <a class="ep-text" href="photography.html">photography</a>
+        </span>
+        <span class="ep-button">
+            <a class="ep-text" href="about.html">about</a>
+        </span>
+      </div>
+  </div>
+
+  <div class="container">
+    <p class="h1 ep-text">
+      EVALUATING POSE SIMILARITY IN TIKTOK VIDEOS
+    </p>
+    <p class="h2 ep-text">
+      FINAL PROJECT FOR CIS 581 - COMPUTER VISION AND COMPUTATIONAL PHOTOGRAPHY - FALL 2020
+    </p>
+    <p class="h3 ep-text">
+      Python
+    </p>
+
+    <p class="ep-header ep-text">
+      OVERVIEW
+    </p>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="ep-block">
+        <p class="h4 ep-text">
+          This project was for CIS 581, Computer Vision and Computational Photography and I worked on it with Alex Chen, 
+          James Rao, Jonathan Lee, and Tatiana Tsygankova. The goal of our project was to apply existing pose detection 
+          techniques to evaluate the accuracy of TikTok dance videos, which have become notably popular during the COVID
+          lockdown. 
+        </p>
+        <p class="h4 ep-text">
+          We collected and manually evaluated 190 videos (15 replications of 11 different TikTok dances, and 25 renditions 
+          of a 12th dance) to be used as training and testing data. We then used the OpenPose library to perform pose 
+          detection on the videos, and built a neural network using PyTorch to perform the predictions. The results 
+          revealed that the model usually predicted an accuracy close to the mean of the labels; occassionally, however, 
+          the model predicted a wider range of values across specific test sets that were relatively close to the actual 
+          labels, demonstrating the potential of our model.  
+        </p>
+        <br>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="ep-block">
+        <p class="ep-header ep-text">
+          DEVELOPMENT
+        </p>
+        <p class="h4 ep-text">
+          To implement our project, we first did some initial data collection of popular TikTok dances and then set up a 
+          3-stage pipeline, consisting of a pre-processing stage, normalization stage, and finally our machine learning stage. 
+          In the pre-processing stage, we used OpenPose to output the keypoints of each frame for each video of a 
+          specific dance and parsed those keypoints. The associated labels, which represent how accurate a dance was 
+          (ranging from 1 to 10) as compared to the "model" dance (10), were parsed in a .csv file. 
+        </p>
+        <p class="h4 ep-text">
+          For the normalization stage, we utilized OpenPose’s normalization feature to convert the keypoint coordinates from 
+          their original scale to a [0, 1] scale. This is helpful for videos taken with different frame dimensions and for 
+          dancers at varying distances from the camera. Additionally, we centered the frame around the nose keypoint by setting 
+          its coordinate values to [0.5, 0.5] and translated all other keypoint coordinates accordingly.
+        </p>
+        <p class="h4 ep-text">
+          Finally, we built a neural network using PyTorch for the purpose of evaluating how accurate interpretations of 
+          particular TikTok dances were as compared to a “model” rendition. The network will output a number in the range 0 to 
+          10 that describes how accurate a video of the dance is as compared to this “model” rendition. We used a 16/4/5 
+          (training/validation/test) split of the data on the “All About Cake” dance, and 11/2/2 on the rest.
+        </p>
+      </div>
+      <div class="ep-block">
+        <figure>
+          <img src="images/work/tiktok-1.jpg" alt="Reference Videos">
+          <figcaption class="ep-text">List of dances used as well as the "best" reference video for each. </figcaption>
+        </figure>
+        <figure>
+          <img src="images/work/tiktok-2.jpg" alt="Best Reference Videos">
+          <figcaption class="ep-text">Pose estimation examples on the "best" reference video for selected dances. </figcaption>
+        </figure>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <figure>
+    </figure>
+    <div class="ep-block">
+      <object data="docs/cis581prez.pdf" type="application/pdf" width="100%">
+      </object>
+    </div>
+  </div>
+  
+  <div id="footer">
+    <footer>
+        <p class="ep-text">&copy; Mona Lee 2021</p>
+    </footer>
+  </div>
+</body>
