@@ -813,6 +813,10 @@ body {
   height: 600px;
 }
 
+.fullFrame {
+  height: 200px;
+}
+
 object { 
   height: 600px;
 }
@@ -821,6 +825,12 @@ object {
   margin: 0px auto 0px;
   display: block;
   height: 550px;
+}
+
+.smallImage {
+  width: 100%;
+  max-width: 550px;
+  position: right;
 }
 
 @media screen and (max-width: 900px) {

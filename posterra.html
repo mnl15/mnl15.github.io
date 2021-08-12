@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Mona Lee</title>
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#fff">
+    <meta name="application-name" content="favicons-webpack-plugin">
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=0.8, user-scalable=no" />
+
+    <script src="/assets/global.bundle.js"></script>
+    <link rel="stylesheet" href="css/joplin.css">
+
+</head>
+
+<body id="index" class="ep-block-container">
+  <div id="header">
+      <a href="/">
+          <div id="logo">
+              <img src="images/Logo.png">
+          </div>
+      </a>
+
+      <div class="ep-menu">
+        <span class="ep-button">
+            <a class="ep-text" href="work.html">work</a>
+        </span>
+        <span class="ep-button">
+            <a class="ep-text" href="photography.html">photography</a>
+        </span>
+        <span class="ep-button">
+            <a class="ep-text" href="about.html">about</a>
+        </span>
+      </div>
+  </div>
+
+  <div class="container">
+    <p class="h1 ep-text">
+      POSTERRA: HANDHELD MECHANISM FOR UNDERWATER CLEAN-UP DIVES 
+    </p>
+    <p class="h2 ep-text">
+      SENIOR CAPSTONE PROJECT - FALL 2020 AND SPRING 2021
+    </p>
+    <br>
+    <p class="ep-header ep-text">
+      OVERVIEW
+    </p>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="ep-block">
+        <p class="h4 ep-text">
+          Posterra was a year-long capstone project sponsored by the MEAM department that I worked on with Chris Fox, 
+          Hanna Kim, Lucy Stinn, Rakesh Ravi, and Seth Rogers. The goal of our project was to develop a handheld 
+          underwater device to assist scuba divers participating in clean-up dives. It accomplishes this goal by 
+          allowing divers to safely remove solid waste at depths up to 10 meters within the sublittoral zone of the 
+          ocean, while also providing an effective storage solution for the collected waste. 
+        </p>
+        <p class="h4 ep-text">
+          The project won the Judges' Choice award at the culminating department-wide competition and I was responsible 
+          for stakeholder research, product development, and pump and hose research and testing. 
+        </p>
+        <br>
+      </div>
+      <div class="ep-block">
+        <iframe width="100%" class="myIframe" src="https://www.youtube.com/embed/GINSuKyYyx0" 
+          title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+        <script type="text/javascript" language="javascript"> 
+          $('.myIframe').css('height', $(window).height()+'px');
+        </script>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <p class="ep-header ep-text">
+      BACKGROUND
+    </p>
+    <p class="h4 ep-text">
+      Much of the first semester for Senior Design is dedicated to finding an impactful and rigorous project which means 
+      lots of brainstorming, reaching out to stakeholders, and downselecting. Our team knew we were passionate about 
+      sustainability and during the process of figuring out what we would work on, we had brainstormed ideas for compact 
+      recycling machines, a device that could crochet yarn from plastic bags, and autonomous street sweepers (to name a few). 
+    </p>
+    <p class="h4 ep-text">
+      While we were all used to being given a problem and solving it with the technical knowledge we had gained during 
+      our time at Penn, this was the first time we were really tasked with understanding how our work could impact real 
+      people and how to appropriately scope our work for our time. This was a really tough but rewarding experience and 
+      after talking to stakeholders from scuba divers to people who worked at environmental non-profits to water 
+      management authority, we honed in on the lack of efforts to cleanup solid waste at the bottom of the ocean and 
+      decided on Posterra, a device that would increase the efficiency of clean-up dives for scuba divers.  
+    </p>
+    <br>
+  </div>
+
+  <div class="container">
+    <p class="ep-header ep-text">
+      DEVELOPMENT
+    </p>
+    <p class="h4 ep-text">
+      Our design for our device featured three main subsystems that we focused on: the aquisition subsystem (the pump 
+      that would increase rate of pickup), the extension subsystem (the tubing that would provide further reach for 
+      the diver), and the encasement subsystem (the container that would allow the diver to carry a larger amount of 
+      trash for a given dive). 
+    </p>
+    <p class="h4 ep-text">
+      For our aquisition subsystem, we decided to use a pump and venturi to drive flow through our system. With our 
+      weight and space constraints, we decided to use a low voltage (less than 60V) pump and for our use underwater, 
+      decided to use a bilge pump which is traditionally used for aquatic vehicles. Since the pump couldn't safely 
+      intake trash and other particulates, we needed to design a venturi junction which would utilize the flow velocity 
+      from the pump to induce a suction flow through our channel that connected our extension subsytem to the encasement 
+      subsystem. We ended up testing two different pumps and many many venturi designs to validate our numbers for fluid 
+      flow found from COMSOL.   
+    </p>
+    <p class="h4 ep-text">
+      For our extension subsystem, we decided on a flexible hose to maximize usability and performed flow testing to 
+      determine an optimal length of 3 feet 7 inches. For our encasement subsystem, we designed a container with an aluminum 
+      base plate, to which all other components are rigidly connected, as well as a tapered enclosure constructed of 
+      aluminum extruded mesh panels. These were designed to minimize the additional effort that a diver must exert while 
+      using Posterra while maximizing the amount of trash that it could hold.    
+    </p>
+    <br>
+  </div>
+
+  <div class="container">
+    <p class="h4 ep-text">
+      For more technical detail, you can read our final report below:  
+    </p>
+    <div class="ep-block">
+      <object data="docs/Posterra.pdf" type="application/pdf" width="100%">
+      </object>
+    </div>
+  </div>
+
+  <div id="footer">
+    <footer>
+        <p class="ep-text">&copy; Mona Lee 2021</p>
+    </footer>
+  </div>
+</body>
